@@ -1,13 +1,14 @@
 import React from 'react'
 import SetUpAds from './SetUpAds'
 import Targetting from './Targetting'
-const ConfigAdPreview = () => {
+import Payment from './Payment'
+const ConfigAdPreview3 = () => {
   return (
     <div className=' bg-white '>
-      {/* <SetUpAds/> */}
-      <Targetting/>
+      <Payment/>
+      {/* <Targetting/> */}
     </div>
   )
 }
 
-export default ConfigAdPreview
+export default ConfigAdPreview3

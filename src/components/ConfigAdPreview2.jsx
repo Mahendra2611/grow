@@ -3,7 +3,7 @@ import SetUpAds from './SetUpAds'
 import Targetting from './Targetting'
 const ConfigAdPreview2 = () => {
   return (
-    <div className='m-10 bg-white '>
+    <div className=' bg-white '>
       <SetUpAds/>
       {/* <Targetting/> */}
     </div>
