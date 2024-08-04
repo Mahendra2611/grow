@@ -1,9 +1,9 @@
 import Image from "next/image"
 import IMG1 from "../../public/userPic.png"
-import IMG2 from "../../public/adImg.png"
-const AdView = () => {
+import IMG2 from "../../public/Rectangle.png"
+const CreateAdView = () => {
   return (
-    <div className="w-[250px] h-[300px] bg-white pl-1 flex flex-col justify-around">
+    <div className=" w-[250px] h-[300px] bg-white pl-1 flex flex-col justify-around">
       <div className="flex items-start gap-5">
         <Image src={IMG1} alt="user-photo"/>
         <div className="flex flex-col">
@@ -12,7 +12,7 @@ const AdView = () => {
         </div>
       </div>
       <div className="relative">
-        <Image src="" alt="ad-image"/>
+        <Image src={IMG2} alt="ad-image"/>
         <button className='absolute bottom-0 text-white bg-[#2D9AFF] rounded-b-[6px] w-[242px] text-left p-2 text-[10px]'>Buy Now</button>
       </div>
       <div>
@@ -23,4 +23,4 @@ const AdView = () => {
   )
 }
 
-export default AdView
+export default CreateAdView

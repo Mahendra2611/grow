@@ -4,10 +4,13 @@ import IMG1 from "../../public/target-img1.png"
 import FeatureCard from './FeatureCard'
 import IMG4 from "../../public/global.jpg"
 import Date from './Date'
+import P1 from "../../public/placement-1.png"
+import P2 from "../../public/placement-2.png"
+import P3 from "../../public/placement-3.png"
 const Targetting = () => {
     return (
         <div className='min-h-full  p-2 flex flex-col gap-6'>
-            <div className='flex flex-col gap-4'>
+            {/* <div className='flex flex-col gap-4'>
                 <h1 className='font-semibold px-2'>Placements<span className='pl-2 text-red-600'>*</span></h1>
                 <div className='border-2 rounded-lg py-4 border-[#c1c2c4] flex flex-wrap w-full justify-around'>
                     <section className='mb-2 bg-[#89bbfc] rounded-lg p-5 flex flex-col justify-around items-center'>
@@ -19,8 +22,26 @@ const Targetting = () => {
                         <h2 className='font-semibold'>In Feed</h2>
                     </section>
                     <section className='p-5  bg-[#89bbfc] rounded-lg flex flex-col justify-around items-center'>
-                        <Image src={IMG1} />
+                        <Image sr
+                        c={IMG1} />
                         <h2 className='font-semibold'>In Feed</h2>
+                    </section>
+                </div>
+            </div> */}
+            <div className='flex flex-col gap-4'>
+                <h1 className='font-semibold px-2'>Placements<span className='pl-2 text-red-600'>*</span></h1>
+                <div className='border-2 rounded-lg py-4 border-[#c1c2c4] flex flex-wrap w-full justify-around'>
+                    <section className='mb-2 bg-[#4C9AFF1A] rounded-lg p-4 flex flex-col gap-5 justify-between items-center'>
+                        <Image src={P1} />
+                        <h2 className='font-semibold text-[12px]'>In Feed</h2>
+                    </section>
+                    <section className='mb-2 bg-[#4C9AFF1A] rounded-lg p-4 flex flex-col gap-5 justify-between items-center'>
+                        <Image src={P2} />
+                        <h2 className='font-semibold text-[12px]'>Video</h2>
+                    </section>
+                    <section className='mb-2 bg-[#4C9AFF1A] rounded-lg p-4 flex flex-col gap-5 justify-between items-center'>
+                        <Image src={P3} />
+                        <h2 className='font-semibold text-[12px]'>Banner</h2>
                     </section>
                 </div>
             </div>

@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import React from 'react'
-
+import Graph from "../../public/graph.png"
+import Avtar from "../../public/Avatar16.png"
 const Payment = () => {
     return (
         <div className='min-h-full flex flex-col gap-5 p-4'>
@@ -31,15 +33,15 @@ const Payment = () => {
                     <div className='flex flex-col justify-between gap-2'> 
                         <h1 className='text-[12px] text-[#686B6E]'>Budget</h1>
                         <div className='flex gap-4'>
-                        <h1 className='flex flex-col gap-2'><span className='text-[12px]'>Total Budget</span><span className='text-[12px]'>50,000</span></h1>
-                        <h1 className='flex flex-col gap-2'><span className='text-[12px]'>Daily Budget</span><span className='text-[12px]'>50,000</span></h1>
+                        <h1 className='flex flex-col gap-2'><span className='text-[12px] font-semibold'>Total Budget</span><span className='text-[12px] font-semibold'>50,000</span></h1>
+                        <h1 className='flex flex-col gap-2'><span className='text-[12px] font-semibold'>Daily Budget</span><span className='text-[12px] font-semibold'>50,000</span></h1>
                         </div>
                     </div>
                     <div className='flex flex-col justify-between gap-2'> 
                         <h1 className='text-[12px] text-[#686B6E]'>Date & Time</h1>
                         <div className='flex gap-4'>
-                        <h1 className='flex flex-col gap-2'><span className='text-[12px]'>Start Date</span><span className='text-[12px]'>05-10-2024</span></h1>
-                        <h1 className='flex flex-col gap-2'><span className='text-[12px]'>End Date</span><span className='text-[12px]'>10-05-2024</span></h1>
+                        <h1 className='flex flex-col gap-2'><span className='text-[12px] font-semibold'>Start Date</span><span className='text-[12px] font-semibold'>05-10-2024</span></h1>
+                        <h1 className='flex flex-col gap-2'><span className='text-[12px] font-semibold'>End Date</span><span className='text-[12px] font-semibold'>10-05-2024</span></h1>
                         </div>
                     </div>
                 </section>
@@ -48,16 +50,16 @@ const Payment = () => {
                     <h1 className='text-[12px]'>Target People</h1>
                     <div className='flex gap-10'>
                         <p className='flex flex-col gap-2'>
-                            <span className='text-[12px] text-[#686B6E]'>Gender</span>
-                            <span className='text-[12px]'>Male</span>
+                            <span className='text-[12px] text-[#686B6E] '>Gender</span>
+                            <span className='text-[12px] font-semibold'>Male</span>
                         </p>
                         <p className='flex flex-col gap-2'>
-                            <span className='text-[12px] text-[#686B6E]'>Age Group</span>
-                            <span className='text-[12px]'>All Age grop</span>
+                            <span className='text-[12px] text-[#686B6E] '>Age Group</span>
+                            <span className='text-[12px] font-semibold'>All Age grop</span>
                         </p>
                         <p className='flex flex-col gap-2'>
-                            <span className='text-[12px] text-[#686B6E]'>Collection</span>
-                            <span className='text-[12px]'>order Now</span>
+                            <span className='text-[12px] text-[#686B6E] '>Collection</span>
+                            <span className='text-[12px] font-semibold'>order Now</span>
                         </p>
                     </div>
                 </section>
@@ -65,18 +67,49 @@ const Payment = () => {
                 <section className='flex gap-10'>
                     <div className='flex flex-col gap-2'>
                     <h1 className='text-[12px]'>Location</h1>
-                    <div>
-                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] p-2'>Delhi</button>
-                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] p-2'>Delhi</button>
-                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] p-2'>Delhi</button>
+                    <div className='flex gap-2'>
+                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] font-semibold p-2'>Delhi</button>
+                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] font-semibold p-2'>Delhi</button>
+                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] font-semibold p-2'>Delhi</button>
                     </div>
                     </div>
                     <div className='flex flex-col gap-2'>
                     <h1 className='text-[12px]'>Types of ad</h1>
                     <div>
-                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] p-2'>In feed</button>
+                        <button className='rounded-xl text-[10px] bg-[#F3F4F6] font-semibold p-2'>In feed</button>
                         
                     </div>
+                    </div>
+                </section>
+            </div>
+
+            <div className='flex flex-col gap-43'>
+                <section  className='flex justify-between items-center p-2 bg-[#FAFAFA] rounded-lg'>
+                    <div className='flex gap-4 items-center'>
+                        <Image src={Avtar}/>
+                        <h1 className='text-[16px] font-semibold'>Fashions Shops</h1>
+                        <Image src={Graph}/>
+                        <p className='flex fex-col '>
+                            <span className='text-[10px] font-semibold'>25%</span>
+                            <span className='text-[10px]'>popularity</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h1 className='text-[14px]'>300k Members</h1>
+                    </div>
+                </section>
+                <section  className='flex justify-between items-center p-2 bg-[#FAFAFA] rounded-lg'>
+                    <div className='flex gap-4 items-center'>
+                        <Image src={Avtar}/>
+                        <h1 className='text-[16px] font-semibold'>Louis vitton</h1>
+                        <Image src={Graph}/>
+                        <p className='flex fex-col '>
+                            <span className='text-[10px] font-semibold'>25%</span>
+                            <span className='text-[10px]'>popularity</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h1 className='text-[14px]'>50k Members</h1>
                     </div>
                 </section>
             </div>
